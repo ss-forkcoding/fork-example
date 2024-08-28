@@ -1,3 +1,8 @@
 {
-  "ignoreWords": ["lucide"]
+  "ignoreWords": [
+    "lucide"
+  ],
+  "words": [
+    "sonner"
+  ]
 }
