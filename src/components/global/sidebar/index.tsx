@@ -5,7 +5,7 @@ import SidebarLink from "./sidebar-link";
 
 const SideBar = () => {
   return (
-    <aside className="w-[360px] min-h-screen pt-10 border px-6 border-slate-200 border-collapse overflow-scroll space-y-5">
+    <aside className="w-[360px] h-screen pt-10 pb-52 border-t px-6 border-slate-200 border-collapse space-y-8 overflow-scroll">
       {UI_CATEGORIES.map((category, idx) => (
         <section key={category.id} className="flex flex-col gap-3">
           <div>

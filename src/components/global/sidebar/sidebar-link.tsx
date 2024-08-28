@@ -14,7 +14,9 @@ const SidebarLink = ({ href, label }: SidebarLinkProps) => {
   return (
     <Link
       href={`${href}`}
-      className={`${isActive ? "text-orange-500" : "text-slate-500"} `}
+      className={`${
+        isActive ? "text-orange-500" : "text-slate-500"
+      } transition-colors duration-300 hover:text-orange-500 text-sm`}
     >
       {label}
     </Link>
