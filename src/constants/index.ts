@@ -1,5 +1,31 @@
 type UICategories = "공통" | "인풋" | "폼" | "작업";
 
+export type UIKinds =
+  | "text"
+  | "button"
+  | "avatar"
+  | "social-proof"
+  | "sponsor"
+  | "navigation"
+  | "footer"
+  | "text-input"
+  | "number-input"
+  | "picker"
+  | "date-picker"
+  | "time-picker"
+  | "range"
+  | "stepper"
+  | "login-form"
+  | "lead-form"
+  | "commerce-form"
+  | "payment-form"
+  | "convey-builder"
+  | "template-builder"
+  | "website-builder"
+  | "docs"
+  | "spreadsheet"
+  | "drawing-canvas";
+
 type CategoryLists = {
   id: UICategories;
   label: string;
@@ -7,7 +33,7 @@ type CategoryLists = {
 
 type UILink = {
   id: UICategories;
-  href: string;
+  href: UIKinds;
   label: string;
 };
 
@@ -39,32 +65,36 @@ export const COMMON_UI: UILink[] = [
   { id: "폼", href: "payment-form", label: "결제 폼 Payment Form" },
   {
     id: "작업",
-    href: "/convey-builder",
+    href: "convey-builder",
     label: "설문조사 빌더 ConveyFormBuilder",
   },
   {
     id: "작업",
-    href: "/template-builder",
+    href: "template-builder",
     label: "템플릿 빌더 TemplateBuilder",
   },
   {
     id: "작업",
-    href: "/website-builder",
+    href: "website-builder",
     label: "웹 사이트 빌더 WebsiteBuilder",
   },
   {
     id: "작업",
-    href: "/docs",
+    href: "docs",
     label: "문서 작성 DocumentEditor",
   },
   {
     id: "작업",
-    href: "/spreadsheet",
+    href: "spreadsheet",
     label: "스프레드시트 SpreadSheet",
   },
   {
     id: "작업",
-    href: "/drawing-canvas",
+    href: "drawing-canvas",
     label: "드로잉 캔버스 DrawingCanvas",
   },
 ];
+
+export const UIs = COMMON_UI.map((item) => item.href);
+
+export const Labels = COMMON_UI.map((item) => item.label);
