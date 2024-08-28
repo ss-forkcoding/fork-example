@@ -67,3 +67,7 @@
     @apply bg-background text-foreground;
   }
 }
+
+#screenshot-area {
+  max-width: 200ch !important;
+}

@@ -10,7 +10,7 @@ const ScreenShotButton = () => {
   const [stream, setStream] = useState<MediaStream | undefined>(undefined);
 
   const handleCapture = () => {
-    const element = document.querySelector("html");
+    const element = document.getElementById("screenshot-area");
     if (!element) return;
     html2canvas(element).then((canvas) => {
       const dataUrl = canvas.toDataURL("image/png");

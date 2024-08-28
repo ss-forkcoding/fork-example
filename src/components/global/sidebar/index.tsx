@@ -16,7 +16,7 @@ const SideBar = () => {
           <ul className="space-y-1.5">
             {COMMON_UI.filter((ui) => ui.id === category.id).map((ui, idx) => (
               <li key={ui.label}>
-                <SidebarLink href={`/ui${ui.href}`} label={ui.label} />
+                <SidebarLink href={`/ui/${ui.href}`} label={ui.label} />
               </li>
             ))}
           </ul>
