@@ -21,15 +21,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} overflow-hidden flex justify-center items-center flex-col h-screen`}
+        className={`${inter.className} overflow-hidden flex justify-center items-center flex-col h-screen transition-colors duration-700 `}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <div className="py-6 fixed top-0 z-20">
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <div className="py-6 fixed top-0 z-20 transition-colors duration-700">
             <Header />
           </div>
           <div className="size-full flex justify-center items-center z-10 pt-64">
