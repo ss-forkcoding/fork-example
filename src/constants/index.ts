@@ -1,6 +1,7 @@
 type UICategories = "공통" | "인풋" | "폼" | "작업";
 
 export type UIKinds =
+  | "ui-design"
   | "text"
   | "button"
   | "avatar"

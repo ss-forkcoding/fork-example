@@ -1,4 +1,5 @@
 "use client";
+import UiDesign from "@/app/[ui]/_mdx/UiDesign.mdx";
 import Text from "@/app/[ui]/_mdx/Text.mdx";
 import Button from "@/app/[ui]/_mdx/Button.mdx";
 import Avatar from "@/app/[ui]/_mdx/Avatar.mdx";
@@ -37,6 +38,8 @@ const UIViewPages = ({
 
 const rednerMDX = (ui: UIKinds) => {
   switch (ui) {
+    case "ui-design":
+      return <UiDesign />;
     case "text":
       return <Text />;
     case "button":

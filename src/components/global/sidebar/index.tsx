@@ -6,6 +6,14 @@ import SidebarLink from "./sidebar-link";
 const SideBar = () => {
   return (
     <aside className="w-[360px] h-screen pt-10 pb-52 border-t px-6 border-slate-200 border-collapse space-y-8 overflow-scroll">
+      <section className="flex flex-col gap-3">
+        <h2 className="text-base font-medium text-slate-700">배경지식</h2>
+        <ul>
+          <li>
+            <SidebarLink href="ui-design" label="UI 설계" />
+          </li>
+        </ul>
+      </section>
       {UI_CATEGORIES.map((category, idx) => (
         <section key={category.id} className="flex flex-col gap-3">
           <div>
